@@ -40,7 +40,7 @@ def read_one(person_id):
 
         # Serialize the data for the response
         person_schema = PersonSchema()
-        data = person_schema.dump(person).data
+        data = person_schema.dump(person)
         return data
 
     # Otherwise, nope, didn't find that person
